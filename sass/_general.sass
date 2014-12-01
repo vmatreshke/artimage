@@ -1,0 +1,367 @@
+.container-fluid
+  width: 1000px
+
+ul
+  padding: 0
+  margin: 0
+  list-style-type: none
+  li
+    display: inline-block  
+    vertical-align: top
+////////////////////middle
+.middle
+  text-align: center
+  padding-top: 30px
+  background: url('../i/line.png') no-repeat
+  background-position: 50% 95px
+
+.middle .title
+  font-family: 'PT Serif', serif
+  font-size: 24px
+  letter-spacing: 7px
+  text-transform: uppercase
+
+.text-announce
+  font-size: 28px
+  padding: 0 120px
+  letter-spacing: 1px
+  margin-bottom: 75px
+  margin-top: 40px
+
+/////////////programm
+.list-show
+  font-size: 26px
+  color: #ffcd02
+  font-family: 'PT Serif', serif
+  li
+    position: relative
+    width: 190px
+    text-align: left
+    padding-right: 30px
+    p
+      color: #000
+      font-size: 20px
+      margin-top: 35px
+      font-family: 'PT Sans', sans-serif
+
+.list-show li:before
+  content: ''
+  display: block
+  position: absolute
+  top: 22px
+  left: 20px
+  width: 14px
+  height: 14px
+  background: url('../i/dot.png') no-repeat
+
+.list-show li.second:before
+  top: 14px 
+
+/////////////////end programm
+
+///////////////btn
+.btn-seminar
+  width: 440px
+  height: 65px
+  display: block
+  margin: auto
+  background: #ffcd02
+  color: #000
+  line-height: 65px
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 18px
+  letter-spacing: 4px
+  -webkit-box-shadow: 0px 12px 24px -4px rgba(0, 0, 0, 0.5)
+  box-shadow: 0px 12px 24px -4px rgba(0, 0, 0, 0.5)
+
+.btn-seminar:hover
+  cursor: pointer
+
+.btn-seminar:hover,
+.btn-seminar:focus,
+.btn-seminar:active
+  color: #000
+  text-decoration: none  
+
+
+.line
+  content: ''
+  text-align: center
+  left: 0
+  width: 440px
+  margin: 0 auto
+  height: 0
+  border-top: 6px solid rgba(249, 103, 30, 0.8)
+  border-left: 4px solid transparent
+  border-right: 4px solid transparent
+
+
+//////////end btn
+
+
+//////////////////social block
+.twitter,
+.fb-like,
+#vk_like
+  display: inline-block
+  margin-right: 20px
+
+.odnoklassniki
+  display: inline-block
+
+
+.social-list
+  margin-bottom: 40px
+  font-size: 13px
+  font-family: 'Times New Roman', sans-serif
+  li
+    padding-right: 30px
+  .last
+    padding-right: 0  
+
+.social-list a,
+.social-list a:hover
+  text-decoration: none
+  display: inline-block
+
+.link-vk img
+  position: relative
+  top: -1px
+
+.link-vk
+  background: #89a2bc
+  padding-right: 3px
+  padding-left: 4px
+  padding-top: 1px
+  padding-bottom: 1px
+
+.link-vk .icon-heart
+  font-size: 10px
+
+.link-vk + span
+  display: inline-block
+  background: #eff1f1
+  color: #54768e
+  font-weight: bold
+  border: 1px solid #ccc
+  font-size: 11px
+  margin-left: 5px
+  padding: 2px 5px
+  position: relative
+
+
+.link-vk + span:after, 
+.link-vk + span:before 
+  right: 100%
+  top: 50%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+
+
+.link-vk + span:after 
+  border-color: rgba(255, 255, 255, 0)
+  border-right-color: #eff1f1
+  border-width: 3px
+  margin-top: -3px
+
+.link-vk + span:before 
+  border-color: rgba(230, 224, 212, 0)
+  border-right-color: #ccc
+  border-width: 4px
+  margin-top: -4px
+
+
+.icon-vkontakte
+  background: #fff
+
+.link-fb img
+  position: relative
+  top: -1px
+
+.link-fb
+  background: #d1cfcc
+  color: #5a5955
+  padding-right: 3px
+  padding-left: 4px
+  border-radius: 3px
+
+.link-fb:hover
+  color: #5a5955
+
+.link-fb + span
+  display: inline-block
+  background: #d1cfcc
+  font-size: 11px
+  margin-left: 5px
+  padding: 2px 3px
+  position: relative
+
+.link-fb + span:after 
+  right: 100%
+  top: 50%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+  border-right-color: #d1cfcc
+  border-width: 3px
+  margin-top: -3px
+
+
+
+
+.link-tw
+  border: 1px solid #e8e3d8
+  border-radius: 3px
+  color: #19191e
+  padding-right: 3px
+  background: #e4e2df
+  @include gradient-vertical($start-color: #fdfbf8, $end-color: #e4e2df, $start-percent: 0%, $end-percent: 100%)
+  &:hover
+    color: #19191e
+ 
+.link-tw .icon-twitter
+  font-size: 14px
+
+.link-tw + span
+  display: inline-block
+  background: #fff
+  font-size: 11px
+  margin-left: 5px
+  padding: 2px 3px
+  position: relative
+  border: 1px solid #e6e0d4
+  border-radius: 4px
+
+.link-tw + span:after, 
+.link-tw + span:before 
+  right: 100%
+  top: 50%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+
+
+.link-tw + span:after 
+  border-color: rgba(255, 255, 255, 0)
+  border-right-color: #ffffff
+  border-width: 3px
+  margin-top: -3px
+
+.link-tw + span:before 
+  border-color: rgba(230, 224, 212, 0)
+  border-right-color: #e6e0d4
+  border-width: 4px
+  margin-top: -4px
+
+
+
+
+.link-od
+  background: #f69146
+  @include gradient-vertical($start-color: #fca961, $end-color: #f69146, $start-percent: 0%, $end-percent: 100%)
+  border-radius: 40px
+  padding: 1px 2px 2px 1px
+  span
+    background: #fff
+    color: #f69146
+    display: inline-block
+    padding: 0 8px
+    border-radius: 40px
+///////////////end social block
+
+/////////////modal
+.btn-seminar.btn-modal
+  width: 100%
+  height: 45px
+  line-height: 45px
+  margin-bottom: 30px
+  border: 0
+  outline: 0
+  font-size: 13px
+  letter-spacing: 2px
+  box-shadow: none
+
+.line-modal
+  content: ''
+  position: relative
+  top: -30px
+  left: 0
+  width: 100%
+  margin: 0 auto
+  height: 0
+  border-top: 6px solid rgba(249, 103, 30, 0.8)
+  border-left: 4px solid transparent
+  border-right: 4px solid transparent
+
+
+.modal-link,
+.modal-link:hover,
+.modal-link:focus,
+.modal-link:active
+  color: #f9671e
+  text-decoration: underline
+  font-size: 10px
+  letter-spacing: 1px
+////////////end modal
+
+/////////////form
+.form-group
+  margin-bottom: 20px
+
+.form-control
+  height: 40px
+  width: 100%
+  padding: 5px 15px
+  letter-spacing: 1px
+  border: 1px solid #a39d92
+  border-top: 1px solid #848077
+  -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+  outline: 0
+  font-weight: bold
+  font-size: 15px
+  color: #5b5958
+  @include placeholder($color: #5b5958)
+  
+
+/////////////end form
+//////////////////end  middle
+
+////////////footer
+.top-question
+  letter-spacing: 1px
+  color: #f7efdd
+  margin-top: 15px
+
+
+
+.top-question .tel
+  color: #fff
+
+.question-bottom
+  font-size: 15px
+  line-height: 25px
+//end
+
+/////////form
+.form
+  position: absolute
+  top: 255px
+  right: 15px
+
+.form .modal-dialog
+  margin: 0
+
+//////end

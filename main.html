@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artimage</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href="style/screen.css" rel="stylesheet" media="all">
+		<!-- Put this script tag to the <head> of your page -->
+	<script type="text/javascript" src="http://vkontakte.ru/js/api/openapi.js"></script>
+						<script type="text/javascript">
+							VK.init({apiId: 4659961, onlyWidgets: true});
+						</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/placeholder.min.js"></script>
+
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="wrapper">
+  
+      <header class="header">
+        <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-xs-12 header-inner">
+              <a href="#"><img src="i/logo.png" class="logo"></a>
+              <span class="pull-right top-question">
+                Есть вопросы, звоните - <br>
+                <span class="tel">+7 (495) 787-35-00</span>
+              </span>
+              <p class="header-title">запишись на семинар!</p>
+              <p class="header-body"><span class="jeans-title">джинсы:</span><br>
+                гид по лучшим брендам, моделям<br>
+                и актуальным тенденциям
+              </p>
+              <p class="price">
+                Стоимость участия: <br>
+                <span>бесплатно</span><br>
+                вместо 1 500 руб.
+              </p>
+              <ul class="seminar-info">
+                <li>
+                  <span>Семинар состоится:</span> <br>
+                  10 декабря <br>
+                  в 19:00 - 21:00
+                </li>
+                <li>
+                  <span>Место:</span> <br>
+                  институт art&image, <br>
+                  москва, <br>
+                  ул. Сушевская, 19, стр.4
+                </li>
+              </ul>
+
+              <!-- Modal-->
+              <div class="form" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+ 
+                      <h4 class="modal-title" id="myModalLabel">мы вышлем билет<br>
+                        на вашу электронную почту</h4>
+                    </div>
+                    <div class="modal-body">
+                          <form role="form">
+
+                            <div class="form-group">
+
+                              <input type="text" class="form-control"  placeholder="Имя" required>
+                            </div>
+
+                            <div class="form-group">
+
+                              <input type="text" class="form-control"  placeholder="Фамилия" required>
+                            </div>
+                            <div class="form-group">
+
+                              <input type="email" class="form-control"  placeholder="E-mail" required>
+                            </div>
+
+                            <button type="submit" class="btn-seminar btn-modal">Запишитесь на семинар</button>
+                            <div class="line-modal"></div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      
+                        Ваши данные останутся конфиденциальны и не будут переданы сторонним организациям.
+                        <p>
+                          <a href="#" class="modal-link">Пользовательское соглашение.</a>
+                        </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end modal-->
+            </div><!-- end header-inner -->
+          
+          </div><!-- end row -->
+
+        </div><!-- end container -->
+      </header>
+
+      <div class="middle">
+
+        <div class="container-fluid">
+
+          <div class="row">
+
+            <div class="col-xs-12 ">
+              <p class="title">программа</p>
+              <ul class="list-show">
+                <li>1
+                  <p>Интересные факты из истории джинсов</p>
+                </li>
+                <li class="second">2
+                  <p>Словарь джинсовой моды</p>
+                </li>
+                <li>3
+                  <p>Знакомые<br> модели и бренды</p>
+                </li>
+                <li>4
+                  <p>Выбор джинсов под вашу фигуру</p>
+                </li>
+                <li>5
+                  <p>Модные образы с джинсами -<br> street style</p>
+                </li>
+              </ul>
+
+              <p class="text-announce">
+                Узнайте, какие джинсы будут идеально <br> сидеть на вашей фигуре, где их купить и как <br> создавать с ними стильные образы.
+              </p>
+              <a herf="#" class="btn-seminar" 
+                data-toggle="modal" data-target="#modal-form">
+                запишитесь на семинар
+              </a>
+               <div class="line"></div>
+
+              <!-- Modal-->
+              <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+ 
+                      <h4 class="modal-title" id="myModalLabel">мы вышлем билет<br>
+                        на вашу электронную почту</h4>
+                    </div>
+                    <div class="modal-body">
+                          <form role="form">
+
+                            <div class="form-group">
+
+                              <input type="text" class="form-control"  placeholder="Имя" required>
+                            </div>
+
+                            <div class="form-group">
+
+                              <input type="text" class="form-control"  placeholder="Фамилия" required>
+                            </div>
+                            <div class="form-group">
+
+                              <input type="email" class="form-control"  placeholder="E-mail" required>
+                            </div>
+
+                            <button type="submit" class="btn-seminar btn-modal">Запишитесь на семинар</button>
+                            <div class="line-modal"></div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      
+                        Ваши данные останутся конфиденциальны и не будут переданы сторонним организациям.
+                        <p>
+                          <a href="#" class="modal-link">Пользовательское соглашение.</a>
+                        </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end modal-->
+            </div>
+          
+          </div><!-- end row -->
+
+        </div> <!-- end container -->
+      </div><!-- end middle -->
+
+   
+    </div><!-- end wrapper -->
+
+    <footer id="footer">
+        
+        <div class="container-fluid">
+
+          <div class="row">
+
+            <div class="col-xs-12 ">
+              <div class="social-list">
+
+                  <div class="twitter">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="Paramount_Artem" data-lang="ru">Твитнуть</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  </div>
+
+ 
+					<div class="fb-like" data-href="https://www.facebook.com/pages/Artimage/1514147998843256" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+
+
+
+					<!-- Put this div tag to the place, where the Like block will be -->
+
+					<div id="vk_like"></div>
+					<script type="text/javascript">
+					VK.Widgets.Like("vk_like", {type: "mini"});
+					</script>
+
+
+
+                  <div class="odnoklassniki">
+                    <div id="ok_shareWidget"></div>
+                    <script>
+                    !function (d, id, did, st) {
+                      var js = d.createElement("script");
+                      js.src = "http://connect.ok.ru/connect.js";
+                      js.onload = js.onreadystatechange = function () {
+                      if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                        if (!this.executed) {
+                          this.executed = true;
+                          setTimeout(function () {
+                            OK.CONNECT.insertShareWidget(id,did,st);
+                          }, 0);
+                        }
+                      }};
+                      d.documentElement.appendChild(js);
+                    }(document,"ok_shareWidget","http://dev.ok.ru","{width:100,height:30,st:'oval',sz:20,nt:1}");
+                    </script>
+
+                  </div>
+              </div>
+
+              <p ><span class="question-bottom">Есть вопросы, звоните -</span> <br>
+                  <span class="tel">+7 (495) 787-35-00</span>
+              </p>
+
+              <p class="copy-block">&copy; АРТ&ИМИДЖ, 1998 - 2014</p>
+            </div>
+          </div><!-- end row -->
+        </div>   <!-- end container --> 
+    </footer><!-- end footer -->
+
+
+
+          <script>
+      // To test the @id toggling on password inputs in browsers that don’t support changing an input’s @type dynamically (e.g. Firefox 3.6 or IE), uncomment this:
+      // $.fn.hide = function() { return this; }
+      // Then uncomment the last rule in the <style> element (in the <head>).
+      $(function() {
+        // Invoke the plugin
+        $('input, textarea').placeholder();
+        // That’s it, really.
+        // Now display a message if the browser supports placeholder natively
+        var html;
+        
+        if (html) {
+          $('<p class="note">' + html + '</p>').insertAfter('form');
+        }
+      });
+    </script>
+  </body>
+</html>
